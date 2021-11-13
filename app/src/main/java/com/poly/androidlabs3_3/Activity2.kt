@@ -13,15 +13,15 @@ class Activity2 : AppCompatActivity() {
         val binding = Activity2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.toThird.setOnClickListener {
+        binding.bnToThird.setOnClickListener {
             goToThird()
         }
 
-        binding.toFirst.setOnClickListener {
+        binding.bnToFirst.setOnClickListener {
             finish()
         }
 
-        binding.toAbout.setOnClickListener {
+        binding.bnToAbout.setOnClickListener {
             goToAbout()
         }
     }

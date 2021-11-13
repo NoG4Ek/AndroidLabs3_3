@@ -5,17 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.poly.androidlabs3_3.databinding.Activity1Binding
 
-class Activity1 : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         val binding = Activity1Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.toSecond.setOnClickListener {
+        binding.bnToSecond.setOnClickListener {
             goToSecond()
         }
-        binding.toAbout.setOnClickListener {
+        binding.bnToAbout.setOnClickListener {
             goToAbout()
         }
     }

@@ -3,17 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-
-    </data>
-
     <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".activity2"
         android:background="#673AB7">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fragment2"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -31,7 +29,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/toFirst"
+                android:id="@+id/bnToFirst"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/to_first"
@@ -43,11 +41,11 @@
                 />
 
             <Button
-                android:id="@+id/toThird"
+                android:id="@+id/bnToThird"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/to_third"
-                app:layout_constraintTop_toBottomOf="@id/toFirst"
+                app:layout_constraintTop_toBottomOf="@id/bnToFirst"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -68,7 +66,7 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/to_about"
+                    android:id="@+id/bnToAbout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/to_about"
