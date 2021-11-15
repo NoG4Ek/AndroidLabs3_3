@@ -29,4 +29,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, ActivityAbout::class.java)
         startActivity(intent)
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 }
