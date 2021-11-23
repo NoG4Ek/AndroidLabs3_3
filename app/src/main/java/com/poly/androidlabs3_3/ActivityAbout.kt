@@ -17,7 +17,7 @@ class ActivityAbout : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
+        finish()
         return true
     }
 }
